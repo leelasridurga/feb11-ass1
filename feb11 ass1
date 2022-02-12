@@ -1,0 +1,34 @@
+#program to generate a super market bill
+cusname=input('Enter customer name:')
+cusphnno=int(input('Enter customer phone number:'))
+bis=80
+chocos=100
+maggie=30
+skybag=2000
+bisqty=int(input('Enter number of biscuit packets:'))
+chocosqty=int(input('Enter number of choco packets:'))
+maggieqty=int(input('Enter number of maggie packets:'))
+skybagsqty=int(input('Enter number of skybags:'))
+bill=(bis*bisqty)+(chocos*chocosqty)+(maggie*maggieqty)+(skybag*skybagsqty)
+if bill>5000:
+    dis=bill*10/100
+    tax=bill*10/100
+elif bill>3000:
+    dis=bill*8/100
+    tax=bill*10/100
+elif bill>2000:
+    dis=bill*5/100
+    tax=bill*18/100
+elif bill>1000:
+    dis=bill*3/100
+    tax=bill*18/100
+totbill=bill-dis+tax
+print('TOTAL BILL=',totbill)
+output:
+Enter customer name:leela
+Enter customer phone number:1234567890
+Enter number of biscuit packets:5
+Enter number of choco packets:12
+Enter number of maggie packets:3
+Enter number of skybags:2
+TOTAL BILL= 5690.0
